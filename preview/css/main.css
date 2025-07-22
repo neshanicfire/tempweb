@@ -1,192 +1,84 @@
-/*
- * Globals
- */
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff; }
-
-/* Custom default button */
-.btn-default {
-  color: #fff;
-  text-shadow: none;
-  /* Prevent inheritence from `body` */
-  background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 20px;
-  padding: 0.5rem 2rem; }
-
-.btn-default:hover,
-.btn-default:focus {
-  background-color: rgba(255, 255, 255, 0.3); }
-
-/*
- * Base structure
- */
-html,
-body {
-  height: 100%; }
 
 body {
-  background: url(../img/cover.jpg) no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
-  text-align: center;
-  font-family: 'Quicksand', sans-serif; }
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%;
-  /* For at least Firefox */
-  min-height: 100%;
-  background: rgba(48, 53, 70, 0.5);
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); }
-
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top; }
-
-.cover-container {
-  margin-right: auto;
-  margin-left: auto; }
-
-/* Padding for spacing */
-.inner {
-  padding: 30px; }
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
-.nav-masthead {
-  text-align: center;
-  display: block; }
-
-.nav-masthead .nav-link {
-  display: inline-block; }
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left; }
-  .nav-masthead {
-    float: right; } }
-
-/*
- * Cover
- */
-.cover {
-  padding: 0 20px; }
-
-.cover .btn-notify {
-  padding: 10px 60px;
-  font-weight: 500;
-  text-transform: uppercase;
-  border-radius: 40px; }
-
-.cover-heading {
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  font-size: 2rem;
-  margin-bottom: 5rem; }
-
-@media (min-width: 768px) {
-  .cover-heading {
-    font-size: 3.4rem;
-    letter-spacing: 15px; } }
-
-.cover-copy {
-  max-width: 500px;
-  margin: 0 auto 3rem; }
-
-/*
- * Footer
- */
-.mastfoot {
-  color: #999;
-  /* IE8 proofing */
-  color: rgba(255, 255, 255, 0.5); }
-
-/*
- * Subscribe modal box
- */
-#subscribeModal .modal-content {
-  background-color: #303546;
-  color: #fff;
-  text-align: left; }
-
-#subscribeModal .modal-header, #subscribeModal .modal-footer {
-  border: 0; }
-
-#subscribeModal .close {
-  color: #fff; }
-
-#subscribeModal .form-control {
-  margin-top: 1rem;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff; }
-  #subscribeModal .form-control:focus {
-    border-color: #49506a; }
-
-/*
- * Affix and center
- */
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0; }
-  .mastfoot {
-    position: fixed;
-    bottom: 0; }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle; }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%;
-    /* Must be percentage or pixels for horizontal alignment */ } }
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 1060px; } }
-
-
-.hero {
-  background: url('../img/cover.jpg') center/cover no-repeat;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
 }
-.hero h1, .hero p {
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
-}
-.hero .btn-primary {
-  background-color: #d9534f;
-  border-color: #d43f3a;
-}
-
 
 .hero {
   background: url('../img/NeshanicFire-PumperOperation.JPG') center/cover no-repeat;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
 }
-.hero h1, .hero p {
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+
+.hero .logo {
+  max-width: 120px;
+  margin-bottom: 20px;
 }
-.hero .btn-primary {
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  display: inline-block;
+  padding: 12px 30px;
   background-color: #d9534f;
-  border-color: #d43f3a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+.content-section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.content-section.alt {
+  background-color: #f1f1f1;
+}
+
+.content-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+footer {
+  background-color: #303546;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
 }
