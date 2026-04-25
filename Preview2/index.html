@@ -7,72 +7,246 @@
   <title>Neshanic Fire - Preview</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&display=swap">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap">
+
   <link href="../css/bootstrap.min.css" rel="stylesheet">
   <link href="../css/font-awesome/css/all.min.css" rel="stylesheet">
-  <link href="../css/main.css" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      font-family: 'Quicksand', sans-serif;
+      background-color: #1a1a1a;
+      color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('../img/NeshanicFire-PumperOperation.JPG') center/cover no-repeat;
+      min-height: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 40px 20px;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 800;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+      margin-bottom: 16px;
+      letter-spacing: 0.03em;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #f0f0f0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      margin-bottom: 28px;
+    }
+    .hero .btn-hero {
+      background-color: #CC0000;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      letter-spacing: 0.04em;
+      transition: background-color 0.2s;
+    }
+    .hero .btn-hero:hover { background-color: #aa0000; color: #fff; }
+
+    /* Nav bar */
+    .top-nav {
+      background-color: #111;
+      border-bottom: 3px solid #CC0000;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .top-nav .brand {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #ffffff;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+    }
+    .top-nav .nav-links a {
+      color: #cccccc;
+      font-weight: 600;
+      text-decoration: none;
+      margin-left: 24px;
+      font-size: 0.9rem;
+    }
+    .top-nav .nav-links a:hover { color: #FFD700; }
+
+    /* Volunteer section */
+    .volunteer-section {
+      background-color: #242424;
+      text-align: center;
+      padding: 48px 24px;
+      border-bottom: 1px solid #333;
+    }
+    .volunteer-section h2 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      color: #CC0000;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 16px;
+    }
+    .volunteer-section p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #cccccc;
+      max-width: 600px;
+      margin: 0 auto 24px;
+      line-height: 1.7;
+    }
+    .btn-contact {
+      display: inline-block;
+      background-color: transparent;
+      color: #ffffff;
+      border: 2px solid #ffffff;
+      border-radius: 24px;
+      padding: 10px 36px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background-color 0.2s;
+    }
+    .btn-contact:hover { background-color: rgba(255,255,255,0.15); color: #fff; }
+
+    /* Cards */
+    .cards-section {
+      padding: 48px 24px;
+      background-color: #1a1a1a;
+    }
+    .cards-section .section-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 36px;
+      letter-spacing: 0.04em;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .info-card {
+      background-color: #242424;
+      border-radius: 8px;
+      border-top: 4px solid #CC0000;
+      padding: 28px 24px;
+      text-align: left;
+    }
+    .info-card .card-icon {
+      font-size: 1.8rem;
+      color: #FFD700;
+      margin-bottom: 14px;
+    }
+    .info-card h5 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .info-card p {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #aaaaaa;
+      line-height: 1.65;
+      margin: 0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #111;
+      border-top: 3px solid #CC0000;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #666;
+    }
+    footer a { color: #CC0000; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
 </head>
-<body id="top">
-  <div class="site-wrapper">
+<body>
 
-    <header class="hero bg-dark text-white text-center py-5">
-      <div class="container">
-        <h1 class="display-4">Join Our Volunteer Fire Department</h1>
-        <p class="lead">Serving the community with pride and dedication.</p>
-        <a href="#volunteer" class="btn btn-primary btn-lg">Learn How to Volunteer</a>
+  <nav class="top-nav">
+    <a class="brand" href="#">Neshanic Vol. Fire Co.</a>
+    <div class="nav-links">
+      <a href="#volunteer">Volunteer</a>
+      <a href="#info">Info</a>
+      <a href="mailto:info@neshanicfire.com">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Serving Our Community with Pride</h1>
+      <p>Neshanic Volunteer Fire Company — always ready, always there.</p>
+      <a href="#volunteer" class="btn-hero">Learn How to Volunteer</a>
+    </div>
+  </section>
+
+  <section id="volunteer" class="volunteer-section">
+    <h2>Volunteer with Us</h2>
+    <p>Looking to give back to your community? We're always looking for passionate individuals to join our team.</p>
+    <a href="mailto:info@neshanicfire.com" class="btn-contact">Contact Us</a>
+  </section>
+
+  <section id="info" class="cards-section">
+    <div class="card-grid">
+      <div class="info-card">
+        <div class="card-icon"><i class="fas fa-fire-extinguisher"></i></div>
+        <h5>Volunteer Opportunities</h5>
+        <p>Explore ways you can serve — from fire response to event support and more.</p>
       </div>
-    </header>
-
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
-
-        <div id="volunteer" class="inner cover my-5">
-          <h2 class="cover-heading">Volunteer with Us</h2>
-          <p>Looking to give back to your community? We're always looking for passionate individuals to join our team.</p>
-          <a href="mailto:info@neshanicfire.com" class="btn btn-default">Contact Us</a>
-        </div>
-
-        <div class="container my-5">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card bg-dark text-white mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">Volunteer Opportunities</h5>
-                  <p class="card-text">Explore ways you can serve — from fire response to event support and more.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card bg-dark text-white mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">Fire Safety Tips</h5>
-                  <p class="card-text">Help keep your home and family safe with resources from our department.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="card bg-dark text-white mb-4">
-                <div class="card-body">
-                  <h5 class="card-title">Community Events</h5>
-                  <p class="card-text">Join us at open houses, parades, and fundraisers throughout the year.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="mastfoot">
-          <div class="inner text-center">
-            <p>© NeshanicFire.com</p>
-          </div>
-        </div>
-
+      <div class="info-card">
+        <div class="card-icon"><i class="fas fa-home"></i></div>
+        <h5>Fire Safety Tips</h5>
+        <p>Help keep your home and family safe with resources from our department.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+        <h5>Community Events</h5>
+        <p>Join us at open houses, parades, and fundraisers throughout the year.</p>
       </div>
     </div>
-  </div>
+  </section>
+
+  <footer>
+    <p>&copy; NeshanicFire.com</p>
+  </footer>
 
   <script src="../scripts/jquery.slim.min.js"></script>
   <script src="../scripts/bootstrap.bundle.min.js"></script>
-  <script src="../scripts/main.js"></script>
 </body>
 </html>
