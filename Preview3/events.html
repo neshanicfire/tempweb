@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Events - Neshanic Volunteer Fire Company</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap">
+  <link href="../css/font-awesome/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="../img/LOGO_48_NESHANIC_RED_IMAGE.png" alt="NVFC Logo">
+        <div class="nav-brand-text">
+          <span class="org-name">Neshanic Vol. Fire Co.</span>
+          <span class="org-sub">Established [Year] &bull; Serving Our Community</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="events.html" class="active">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-emergency"><i class="fas fa-phone"></i> Emergencies: Call 911</div>
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">&#9776;</button>
+    </div>
+    <div class="nav-mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="safety.html">Safety</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <h1>News &amp; Events</h1>
+    <p>Stay up to date with what's happening at Neshanic Fire</p>
+  </div>
+  <div class="breadcrumb-bar">
+    <a href="index.html">Home</a><span>&rsaquo;</span> Events
+  </div>
+
+  <!-- UPCOMING EVENTS -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">On the Calendar</div>
+      <h2 class="section-title">Upcoming Events</h2>
+      <div style="display:flex; flex-direction:column; gap:16px; margin-top:32px;">
+
+        <!-- Memorial Day — real event -->
+        <div class="event-item">
+          <div class="event-date-block">
+            <span class="month">May</span>
+            <span class="day">25</span>
+          </div>
+          <div class="event-body">
+            <div class="event-meta"><i class="fas fa-clock"></i> 9:30 a.m. &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> Maple Ave, Neshanic Station</div>
+            <h4>Memorial Day Parade</h4>
+            <p>Annual parade stepping off from the firehouse at 9:30 a.m. Route: Maple Ave &rarr; Elm St &rarr; Pearl St &rarr; Olive St &rarr; Pleasant Run Rd. Brief ceremony to follow at the firehouse. All are welcome to participate or cheer along the route.</p>
+            <a href="../memorialday.html" style="font-size:0.85rem; font-weight:800; color:#CC0000; text-transform:uppercase; letter-spacing:0.06em;">Full Details &amp; Participant Info <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Placeholder events -->
+        <div class="event-item">
+          <div class="event-date-block">
+            <span class="month">[Mo]</span>
+            <span class="day">[##]</span>
+          </div>
+          <div class="event-body">
+            <div class="event-meta"><i class="fas fa-clock"></i> [Time] &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> [Location]</div>
+            <h4>[PLACEHOLDER: Event Name]</h4>
+            <p>[PLACEHOLDER: Description of the event — open house, fundraiser, pancake breakfast, blood drive, etc. Include what attendees can expect and how to participate.]</p>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date-block">
+            <span class="month">[Mo]</span>
+            <span class="day">[##]</span>
+          </div>
+          <div class="event-body">
+            <div class="event-meta"><i class="fas fa-clock"></i> [Time] &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> [Location]</div>
+            <h4>[PLACEHOLDER: Event Name]</h4>
+            <p>[PLACEHOLDER: Description of the event.]</p>
+          </div>
+        </div>
+        <div class="event-item">
+          <div class="event-date-block">
+            <span class="month">[Mo]</span>
+            <span class="day">[##]</span>
+          </div>
+          <div class="event-body">
+            <div class="event-meta"><i class="fas fa-clock"></i> [Time] &nbsp;|&nbsp; <i class="fas fa-map-marker-alt"></i> [Location]</div>
+            <h4>[PLACEHOLDER: Event Name]</h4>
+            <p>[PLACEHOLDER: Description of the event.]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- NEWS -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="section-label">Latest News</div>
+      <h2 class="section-title">Recent Updates</h2>
+      <div class="grid-3" style="margin-top:36px;">
+        <div class="news-card">
+          <div class="news-card-img-placeholder"><i class="fas fa-newspaper"></i></div>
+          <div class="news-card-body">
+            <div class="news-card-date">[Month Day, Year]</div>
+            <h3>[PLACEHOLDER: News headline]</h3>
+            <p>[PLACEHOLDER: 1-2 sentence summary of the news story — a notable call, a new piece of equipment, an award, a training milestone, etc.]</p>
+            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img-placeholder"><i class="fas fa-newspaper"></i></div>
+          <div class="news-card-body">
+            <div class="news-card-date">[Month Day, Year]</div>
+            <h3>[PLACEHOLDER: News headline]</h3>
+            <p>[PLACEHOLDER: 1-2 sentence summary of the news story.]</p>
+            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img-placeholder"><i class="fas fa-newspaper"></i></div>
+          <div class="news-card-body">
+            <div class="news-card-date">[Month Day, Year]</div>
+            <h3>[PLACEHOLDER: News headline]</h3>
+            <p>[PLACEHOLDER: 1-2 sentence summary of the news story.]</p>
+            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- SOCIAL -->
+  <section class="section">
+    <div class="section-inner" style="text-align:center;">
+      <div class="section-label">Follow Along</div>
+      <h2 class="section-title">Stay Connected on Facebook</h2>
+      <p class="section-subtitle" style="margin:0 auto 28px;">[PLACEHOLDER: "Follow us on Facebook for real-time updates, event photos, and department news."]</p>
+      <a href="https://www.facebook.com/profile.php?id=100063674617956" target="_blank" rel="noopener" class="btn-primary" style="font-size:1rem; padding:14px 36px;">
+        <i class="fab fa-facebook-f"></i>&nbsp; Follow Us on Facebook
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../img/LOGO_48_NESHANIC_RED_IMAGE.png" alt="NVFC Logo">
+          <p>Neshanic Volunteer Fire Company — proudly serving Neshanic Station and the surrounding community, around the clock.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=100063674617956" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="safety.html">Fire Safety</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="../memorialday.html">Memorial Day Parade</a></li>
+            <li><a href="safety.html">Home Safety Tips</a></li>
+            <li><a href="safety.html#checklist">Safety Checklist</a></li>
+            <li><a href="volunteer.html#faq">Volunteer FAQ</a></li>
+            <li><a href="contact.html">Report Non-Emergency</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <address>
+            [Street Address]<br>
+            Neshanic Station, NJ [Zip]<br><br>
+            Non-Emergency:<br>
+            <a href="tel:[phone]">[Phone Number]</a><br><br>
+            Email:<br>
+            <a href="mailto:info@neshanicfire.com">info@neshanicfire.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Neshanic Volunteer Fire Company. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

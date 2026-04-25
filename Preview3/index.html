@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neshanic Volunteer Fire Company</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700;800&amp;display=swap">
+  <link href="../css/font-awesome/css/all.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">
+        <img src="../img/LOGO_48_NESHANIC_RED_IMAGE.png" alt="NVFC Logo">
+        <div class="nav-brand-text">
+          <span class="org-name">Neshanic Vol. Fire Co.</span>
+          <span class="org-sub">Established [Year] &bull; Serving Our Community</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="safety.html">Safety</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-emergency"><i class="fas fa-phone"></i> Emergencies: Call 911</div>
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">&#9776;</button>
+    </div>
+    <div class="nav-mobile" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="safety.html">Safety</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Proudly Serving Neshanic Station, NJ</div>
+      <h1>Always Ready.<br>Always There.</h1>
+      <p>The Neshanic Volunteer Fire Company has been protecting our community for generations. We respond day and night — because our neighbors count on us.</p>
+      <div class="hero-buttons">
+        <a href="volunteer.html" class="btn-primary"><i class="fas fa-fire-extinguisher"></i>&nbsp; Join Our Team</a>
+        <a href="about.html" class="btn-outline">Learn About Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-number">[Year]</div>
+        <div class="stat-label">Est.</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">[##]</div>
+        <div class="stat-label">Active Members</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">[###]+</div>
+        <div class="stat-label">Annual Calls</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">24/7</div>
+        <div class="stat-label">Always On Call</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">100%</div>
+        <div class="stat-label">Volunteer</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT SNIPPET -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="grid-2" style="align-items:center; gap:60px;">
+        <div>
+          <div class="section-label">Who We Are</div>
+          <h2 class="section-title">A Volunteer Fire Company Built on Community</h2>
+          <p style="color:#aaa; line-height:1.8; margin:0 0 16px; font-weight:500;">
+            [PLACEHOLDER: Add a paragraph about the history and mission of the Neshanic Volunteer Fire Company. Include when it was founded, the geographic area it serves, and what makes your company unique.]
+          </p>
+          <p style="color:#aaa; line-height:1.8; margin:0 0 28px; font-weight:500;">
+            [PLACEHOLDER: Add a second paragraph about your company values, commitment to training, community involvement, and the types of calls you respond to.]
+          </p>
+          <a href="about.html" class="btn-primary">Meet the Team</a>
+        </div>
+        <div>
+          <img src="../img/NeshanicFireEngine-Old.png" alt="Neshanic Fire Engine" style="border-radius:8px; border:3px solid #333; width:100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURE CARDS -->
+  <section class="section section-alt">
+    <div class="section-inner">
+      <div class="section-header-center">
+        <div class="section-label">How We Serve</div>
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-subtitle">From fire suppression to community education, we are here to keep Neshanic safe.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-fire"></i></div>
+          <h3>Fire Suppression</h3>
+          <p>[PLACEHOLDER: Brief description of fire response operations, mutual aid, and apparatus.]</p>
+          <a href="about.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-ambulance"></i></div>
+          <h3>Emergency Response</h3>
+          <p>[PLACEHOLDER: Brief description of the types of emergency calls responded to — accidents, rescues, hazmat, etc.]</p>
+          <a href="about.html" class="card-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-users"></i></div>
+          <h3>Community Education</h3>
+          <p>[PLACEHOLDER: Describe fire prevention programs, school visits, open houses, and public safety education efforts.]</p>
+          <a href="safety.html" class="card-link">Safety Tips <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Training</h3>
+          <p>[PLACEHOLDER: Describe training programs, certifications, and ongoing education requirements for members.]</p>
+          <a href="volunteer.html" class="card-link">Join & Train <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-calendar-alt"></i></div>
+          <h3>Community Events</h3>
+          <p>From the annual Memorial Day Parade to fundraisers and open houses, we are an active part of the Neshanic community.</p>
+          <a href="events.html" class="card-link">See Events <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-hand-holding-heart"></i></div>
+          <h3>Fundraising</h3>
+          <p>[PLACEHOLDER: Describe fundraising activities, how donations are used, and how the community can support the company.]</p>
+          <a href="contact.html" class="card-link">Support Us <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMORIAL DAY CALLOUT -->
+  <section class="callout">
+    <h2><i class="fas fa-flag"></i>&nbsp; Memorial Day Parade 2026</h2>
+    <p>Join us Monday, May 25th at 9:30 a.m. for the annual Memorial Day Parade. All are welcome to march or cheer along the route.</p>
+    <a href="../memorialday.html" class="btn-outline">Parade Info &amp; Route</a>
+  </section>
+
+  <!-- NEWS SECTION -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-label">Latest</div>
+      <h2 class="section-title">News &amp; Updates</h2>
+      <div class="grid-3" style="margin-top:36px;">
+        <div class="news-card">
+          <div class="news-card-img-placeholder"><i class="fas fa-newspaper"></i></div>
+          <div class="news-card-body">
+            <div class="news-card-date">[Month Day, Year]</div>
+            <h3>[PLACEHOLDER: News headline goes here]</h3>
+            <p>[PLACEHOLDER: Brief summary of the news item. Add 1-2 sentences describing the story.]</p>
+            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img-placeholder"><i class="fas fa-newspaper"></i></div>
+          <div class="news-card-body">
+            <div class="news-card-date">[Month Day, Year]</div>
+            <h3>[PLACEHOLDER: News headline goes here]</h3>
+            <p>[PLACEHOLDER: Brief summary of the news item. Add 1-2 sentences describing the story.]</p>
+            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card-img-placeholder"><i class="fas fa-newspaper"></i></div>
+          <div class="news-card-body">
+            <div class="news-card-date">[Month Day, Year]</div>
+            <h3>[PLACEHOLDER: News headline goes here]</h3>
+            <p>[PLACEHOLDER: Brief summary of the news item. Add 1-2 sentences describing the story.]</p>
+            <a href="#">Read More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:36px;">
+        <a href="events.html" class="btn-outline">All News &amp; Events</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEER CTA -->
+  <section class="section section-alt">
+    <div class="section-inner" style="text-align:center;">
+      <div class="section-label">Join Us</div>
+      <h2 class="section-title">Become a Volunteer</h2>
+      <p class="section-subtitle" style="margin-left:auto; margin-right:auto;">We are always looking for dedicated community members to join our team. No prior experience required — we train you.</p>
+      <a href="volunteer.html" class="btn-primary" style="font-size:1rem; padding:16px 40px;"><i class="fas fa-fire-extinguisher"></i>&nbsp; Start Your Application</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="../img/LOGO_48_NESHANIC_RED_IMAGE.png" alt="NVFC Logo">
+          <p>Neshanic Volunteer Fire Company — proudly serving Neshanic Station and the surrounding community, around the clock.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=100063674617956" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="safety.html">Fire Safety</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="../memorialday.html">Memorial Day Parade</a></li>
+            <li><a href="safety.html">Home Safety Tips</a></li>
+            <li><a href="safety.html#checklist">Safety Checklist</a></li>
+            <li><a href="volunteer.html#faq">Volunteer FAQ</a></li>
+            <li><a href="contact.html">Report Non-Emergency</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <address>
+            [Street Address]<br>
+            Neshanic Station, NJ [Zip]<br><br>
+            Non-Emergency:<br>
+            <a href="tel:[phone]">[Phone Number]</a><br><br>
+            Email:<br>
+            <a href="mailto:info@neshanicfire.com">info@neshanicfire.com</a>
+          </address>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Neshanic Volunteer Fire Company. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.getElementById('mobileNav').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
