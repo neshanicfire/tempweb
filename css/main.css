@@ -141,13 +141,17 @@ body {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
-    top: 0; }
+    top: 0;
+    z-index: 100; }
   .mastfoot {
     position: fixed;
-    bottom: 0; }
+    bottom: 0;
+    z-index: 100; }
   /* Start the vertical centering */
   .site-wrapper-inner {
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding-top: 80px;
+    padding-bottom: 60px; }
   /* Handle the widths */
   .masthead,
   .mastfoot,
